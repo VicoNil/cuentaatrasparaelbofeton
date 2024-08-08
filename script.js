@@ -1,14 +1,16 @@
-function startCountdown(duration) {
+function startCountdown(targetDate) {
     const daysElement = document.getElementById('days');
     const hoursElement = document.getElementById('hours');
     const minutesElement = document.getElementById('minutes');
     const secondsElement = document.getElementById('seconds');
 
-    let endTime = Date.now() + duration * 1000;
-
     function updateCountdown() {
-        let now = Date.now();
-        let timeLeft = Math.max(0, endTime - now);
+        let now = new Date().getTime();
+        let timeLeft = targetDate - now;
+
+        if (timeLeft < 0) {
+            timeLeft = 0;
+        }
 
         let days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
         let hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -28,5 +30,5 @@ function startCountdown(duration) {
     updateCountdown();
 }
 
-const countdownDuration = 55 * 24 * 60 * 60; // 55 días en segundos
-startCountdown(countdownDuration);
+const targetDate = new Date('2024-10-02T00:00:00').getTime(); // Fecha fija: 55 días desde 08/08/2024
+startCountdown(targetDate);
