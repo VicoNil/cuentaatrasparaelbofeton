@@ -3,52 +3,36 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between; /* Asegura que el texto y la cuenta regresiva ocupen el espacio adecuado */
     align-items: center;
     height: 100vh;
-    background-color: #050505; /* Fondo aún más oscuro */
-    font-family: 'VT323', monospace; /* Fuente estilo consola menos llamativa */
+    background-color: #050505; /* Fondo oscuro */
+    font-family: 'VT323', monospace; /* Fuente menos llamativa */
     color: #ffffff;
-}
-
-.container {
-    text-align: center;
-    width: 100%;
-    position: relative;
-    padding: 20px;
 }
 
 h1 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    font-family: 'VT323', monospace; /* Fuente estilo consola menos llamativa */
-    color: #ffffff;
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+    font-size: 36px; /* Texto más grande */
+    margin-top: 20px;
+    margin-bottom: 0;
 }
 
 .countdown {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     width: 100%;
-    height: 80vh; /* Para asegurar que ocupa la mayor parte de la pantalla */
-    position: relative;
-    margin-top: 50px; /* Ajuste para que no esté tan cerca del texto */
+    flex-grow: 1; /* Asegura que la cuenta regresiva ocupe la mayor parte de la pantalla */
 }
 
 .time {
-    margin: 0 20px;
     text-align: center;
-    flex: 1;
+    flex: 1; /* Asegura que cada bloque ocupe el mismo espacio */
 }
 
 .number {
-    font-size: 180px; /* Números aún más grandes */
-    font-family: 'Orbitron', sans-serif; /* Fuente estilo digital/futurista */
+    font-size: 180px; /* Tamaño de los números ajustado */
+    font-family: 'Orbitron', sans-serif; /* Fuente digital */
     color: #ff3333;
 }
 
