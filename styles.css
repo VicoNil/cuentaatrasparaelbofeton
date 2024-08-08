@@ -1,25 +1,26 @@
 body {
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
-    background-color: #1c1c1c;
-    font-family: 'Press Start 2P', cursive;
+    background-color: #050505; /* Fondo aún más oscuro */
+    font-family: 'VT323', monospace; /* Fuente estilo consola menos llamativa */
     color: #ffffff;
 }
 
-.countdown-container {
+.container {
     text-align: center;
     width: 100%;
     position: absolute;
-    top: 20px;
+    top: 0;
+    padding: 20px;
 }
 
 h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    font-family: 'Press Start 2P', cursive;
+    font-size: 32px;
+    margin-bottom: 40px;
 }
 
 .countdown {
@@ -27,21 +28,36 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .time {
-    margin: 0 10px;
+    margin: 10px;
     text-align: center;
+    flex: 1;
 }
 
 .number {
-    font-size: 64px;
-    font-family: 'Orbitron', sans-serif;
+    font-size: 120px; /* Números más grandes */
+    font-family: 'Orbitron', sans-serif; /* Fuente estilo digital/futurista */
     color: #ff3333;
 }
 
 .label {
-    font-size: 18px;
+    font-size: 24px;
     color: #aaaaaa;
     margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .number {
+        font-size: 60px; /* Ajuste para pantallas pequeñas */
+    }
+
+    .label {
+        font-size: 16px;
+    }
 }
