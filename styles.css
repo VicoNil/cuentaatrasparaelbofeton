@@ -10,5 +10,17 @@ body {
     font-family: 'VT323', monospace; /* Fuente menos llamativa */
     color: #ffffff;
 }
+h1 {
+    font-size: 36px; /* Texto más grande */
+    margin-top: 20px;
+    margin-bottom: 0;
+}
 
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-grow: 1; /* Asegura que la cuenta regresiva ocupe la mayor parte de la pantalla */
+}
 
