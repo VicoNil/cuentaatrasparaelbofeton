@@ -23,4 +23,9 @@ h1 {
     width: 100%;
     flex-grow: 1; /* Asegura que la cuenta regresiva ocupe la mayor parte de la pantalla */
 }
+.time {
+    text-align: center;
+    flex: 1; /* Asegura que cada bloque ocupe el mismo espacio */
+}
+
 
