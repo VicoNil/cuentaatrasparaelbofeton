@@ -1,1 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Asegura que el texto y la cuenta regresiva ocupen el espacio adecuado */
+    align-items: center;
+    height: 100vh;
+    background-color: #050505; /* Fondo oscuro */
+    font-family: 'VT323', monospace; /* Fuente menos llamativa */
+    color: #ffffff;
+}
+
 
