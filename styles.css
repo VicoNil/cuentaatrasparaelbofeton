@@ -2,47 +2,37 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between; /* Asegura que el texto y la cuenta regresiva ocupen el espacio adecuado */
     align-items: center;
     height: 100vh;
-    background-color: #050505; /* Fondo aún más oscuro */
-    font-family: 'VT323', monospace; /* Fuente estilo consola menos llamativa */
+    background-color: #050505; /* Fondo oscuro */
+    font-family: 'VT323', monospace; /* Fuente menos llamativa */
     color: #ffffff;
 }
 
-.container {
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    padding: 20px;
-}
-
 h1 {
-    font-size: 32px;
-    margin-bottom: 40px;
+    font-size: 36px; /* Texto más grande */
+    margin-top: 20px;
+    margin-bottom: 0;
 }
 
 .countdown {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    flex-grow: 1; /* Asegura que la cuenta regresiva ocupe la mayor parte de la pantalla */
 }
 
 .time {
-    margin: 10px;
     text-align: center;
-    flex: 1;
+    flex: 1; /* Asegura que cada bloque ocupe el mismo espacio */
 }
 
 .number {
-    font-size: 120px; /* Números más grandes */
-    font-family: 'Orbitron', sans-serif; /* Fuente estilo digital/futurista */
+    font-size: 180px; /* Tamaño de los números ajustado */
+    font-family: 'Orbitron', sans-serif; /* Fuente digital */
     color: #ff3333;
 }
 
@@ -54,7 +44,7 @@ h1 {
 
 @media screen and (max-width: 768px) {
     .number {
-        font-size: 60px; /* Ajuste para pantallas pequeñas */
+        font-size: 90px; /* Ajuste para pantallas pequeñas */
     }
 
     .label {
