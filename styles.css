@@ -6,8 +6,8 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #050505; /* Fondo aún más oscuro */
-    font-family: 'VT323', monospace; /* Fuente estilo consola menos llamativa */
-    color: #ffffff;
+    font-family: 'VT323', Arial, Helvetica, sans-serif; /* Fuente estilo consola menos llamativa */
+    color: #a1a1a1;
 }
 html, body, .container {
     height: 100% ;
