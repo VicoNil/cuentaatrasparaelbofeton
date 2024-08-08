@@ -4,12 +4,18 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: #121212;
     font-family: Arial, sans-serif;
+    color: #ffffff;
 }
 
 .countdown-container {
     text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
 .countdown {
@@ -18,16 +24,16 @@ body {
 }
 
 .time {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 .number {
-    font-size: 48px;
+    font-size: 72px;
     color: #ff3333;
 }
 
 .label {
-    font-size: 16px;
-    color: #333;
+    font-size: 18px;
+    color: #aaaaaa;
     margin-top: 10px;
 }
