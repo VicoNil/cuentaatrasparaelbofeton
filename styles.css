@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -13,14 +14,19 @@ body {
 .container {
     text-align: center;
     width: 100%;
-    position: absolute;
-    top: 0;
+    position: relative;
     padding: 20px;
 }
 
 h1 {
     font-size: 32px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    font-family: 'VT323', monospace; /* Fuente estilo consola menos llamativa */
+    color: #ffffff;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .countdown {
@@ -29,19 +35,19 @@ h1 {
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    height: 80vh; /* Para asegurar que ocupa la mayor parte de la pantalla */
+    position: relative;
+    margin-top: 50px; /* Ajuste para que no esté tan cerca del texto */
 }
 
 .time {
-    margin: 10px;
+    margin: 0 20px;
     text-align: center;
     flex: 1;
 }
 
 .number {
-    font-size: 120px; /* Números más grandes */
+    font-size: 180px; /* Números aún más grandes */
     font-family: 'Orbitron', sans-serif; /* Fuente estilo digital/futurista */
     color: #ff3333;
 }
@@ -54,7 +60,7 @@ h1 {
 
 @media screen and (max-width: 768px) {
     .number {
-        font-size: 60px; /* Ajuste para pantallas pequeñas */
+        font-size: 90px; /* Ajuste para pantallas pequeñas */
     }
 
     .label {
